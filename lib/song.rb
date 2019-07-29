@@ -2,6 +2,8 @@
 class Song 
   # Song methods can all use count 
   @@count = 0
+  
+  # class method
   def self.count 
     @@count
   end 
@@ -9,12 +11,13 @@ class Song
   # makes an array to control genres
   @@genres = []
   
-  # only allow an array with uniq elements
+  # class method to only allow an array with uniq elements
   def self.genres
     @@genres.uniq
   end
 
-  # create and count a genre hash made using the uniq genre array elements 
+  # class method that creates an empty genre hash made using the uniq genre array elements then
+  # counts them
     def self.genre_count
     genre_count = {}
     @@genres.each do |genre|
