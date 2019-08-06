@@ -56,4 +56,6 @@ class Song
   attr_accessor :name, :artist, :genre
 end 
 
+what_does_the_fox_say = Song.new("What Does The Fox Say", "Yjil", "EDM")
+
 
